@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:personalportfolio/screens/PortfolioPage%20.dart';
 
 class Responsive extends StatelessWidget {
   final Widget? mobile;
@@ -13,7 +12,6 @@ class Responsive extends StatelessWidget {
     this.mobilelarge,
     this.tablet,
     this.desktop,
-    required PortfolioPage mobileLarge,
   });
   static bool ismobile(BuildContext context) =>
       MediaQuery.of(context).size.width < 600;

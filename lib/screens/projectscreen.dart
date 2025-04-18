@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:personalportfolio/utils/Appcolor.dart';
 
 class ProjectScreen extends StatelessWidget {
   const ProjectScreen({super.key});
@@ -8,7 +9,14 @@ class ProjectScreen extends StatelessWidget {
     return Container(
       height: MediaQuery.of(context).size.height,
       width: double.infinity,
-      color: Colors.grey[800],
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomCenter,
+
+          colors: [BackgroundColor,PrimaryColor, BackgroundColor],
+        ),
+      ),
       child: Center(
         child: Text(
           "Projects Section",

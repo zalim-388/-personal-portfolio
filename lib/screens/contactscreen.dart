@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:personalportfolio/utils/Appcolor.dart';
 
 class ContactScreen extends StatelessWidget {
   const ContactScreen({super.key});
@@ -8,7 +9,11 @@ class ContactScreen extends StatelessWidget {
     return Container(
       height: MediaQuery.of(context).size.height,
       width: double.infinity,
-      color: Colors.grey[700],
+    decoration: BoxDecoration( gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomCenter,
+
+          colors: [BackgroundColor,PrimaryColor, BackgroundColor],)),
       child: Center(
         child: Text(
           "Contact Section",
@@ -20,5 +25,6 @@ class ContactScreen extends StatelessWidget {
         ),
       ),
     );
+    
   }
 }

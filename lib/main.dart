@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:personalportfolio/screens/PortfolioPage%20.dart';
-import 'package:personalportfolio/widgtes/responsive.dart';
+
+import 'package:personalportfolio/screens/homepage.dart';
+import 'package:personalportfolio/utils/responsive.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,10 +15,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Responsive(
-        mobile: PortfolioPage(),
-        mobileLarge: PortfolioPage(),
-        tablet: PortfolioPage(),
-        desktop: PortfolioPage(),
+        mobile: Homepage(),
+        mobilelarge: Homepage(),
+        tablet: Homepage(),
+        desktop: Homepage(),
       ),
     );
   }
