@@ -9,3 +9,4 @@ const Color accentTextColor = Color(0xFFA855F7); // purple title or button
 const Color statTitleColor = Color(0xFFFFFFFF);
 const Color statSubtitleColor = Color(0xFF999999);
 const Color socialIconBg = Color(0xFF262626);
+const Color neonPurple = Color(0xFF9B5CFF); // Vibrant purple
